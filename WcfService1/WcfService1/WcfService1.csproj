@@ -66,6 +66,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalWineScore.cs" />
+    <Compile Include="GlobalWineScores.cs" />
     <Compile Include="JSON_Wineries.aspx.cs">
       <DependentUpon>JSON_Wineries.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

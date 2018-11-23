@@ -11,6 +11,7 @@
         <div>
         </div>
         <asp:Button ID="BtnFindWine" runat="server" OnClick="BtnFindWine_Click" Text="Button" />
+        <asp:Button ID="BtnWineScore" runat="server" OnClick="BtnWineScore_Click" Text="Button" />
     </form>
 </body>
 </html>
