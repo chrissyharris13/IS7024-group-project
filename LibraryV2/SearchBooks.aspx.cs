@@ -15,8 +15,10 @@ namespace LibraryV2
             using (var webClient = new WebClient())
             {
                 //Data source: https://data.cityofchicago.org/Education/Libraries-Popular-Teen-Titles-at-the-Chicago-Publi/izv6-vdkm 
-                String rawData =
+                String rawJSON =
                     webClient.DownloadString("https://data.cityofchicago.org/resource/6gjb-wqjd.json");
+                 LibraryRankingCollection libraryRankingCollection = JsonConvert.DeserializeObject<LibraryRankingCollection>(rawJSON);
+                Console.WriteLine(libraryRankingCollection.LibraryRankings1.Count);
             }
             //using (var webClient = new WebClient())
             //{
