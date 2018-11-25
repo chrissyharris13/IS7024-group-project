@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -17,6 +18,12 @@ namespace LibraryV2
                 String rawData =
                     webClient.DownloadString("https://data.cityofchicago.org/resource/6gjb-wqjd.json");
             }
+            //using (var webClient = new WebClient())
+            //{
+                //This is where our second data source will go.  We intend to use https://openlibrary.org/dev/docs/api/covers to show book covers when a title is put into the web form.   
+                //String rawData =
+                //webClient.DownloadString("Link to web service will go here");
+            //}
         }
 
         protected void BltdListDescr_Click(object sender, BulletedListEventArgs e)
