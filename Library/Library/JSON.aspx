@@ -10,6 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Button ID="BtnFindBook" runat="server" OnClick="BtnFindbook_click" Text="Submit" />
+            <asp:Button ID="BtnShowCover" runat="server" Text="Button" />
         </div>
         <p>
             &nbsp;</p>
