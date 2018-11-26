@@ -58,12 +58,12 @@ namespace LibraryV2 {
         protected global::System.Web.UI.WebControls.ListBox ListBox1;
         
         /// <summary>
-        /// ObjectDataSource1 control.
+        /// BookResource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource1;
+        protected global::System.Web.UI.WebControls.ObjectDataSource BookResource;
     }
 }

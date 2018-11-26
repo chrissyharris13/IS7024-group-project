@@ -13,8 +13,9 @@
             <asp:TextBox ID="TxtBxInput1" runat="server"></asp:TextBox>
             <asp:Button ID="BtnSearch" runat="server" Text="Search" />
         </div>
-        <asp:ListBox ID="ListBox1" runat="server" Width="225px" DataSourceID="ObjectDataSource1" DataTextField="Title" DataValueField="Id"></asp:ListBox>
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetLibraryRankings1" TypeName="LibraryV2.ShowBooks"></asp:ObjectDataSource>
+        <asp:ListBox ID="ListBox1" runat="server" Width="225px" DataSourceID="BookResource" DataTextField="Title" DataValueField="Id"></asp:ListBox>
+        <asp:ObjectDataSource ID="BookResource" runat="server" SelectMethod="GetLibraryRankings1" TypeName="LibraryV2.ShowBooks"></asp:ObjectDataSource>
+
     </form>
 </body>
 </html>
