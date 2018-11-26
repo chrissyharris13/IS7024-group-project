@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using Newtonsoft.Json;
 
 namespace LibraryV2
 {
-    public partial class SearchBooks : System.Web.UI.Page
+    public class ShowBooks
     {
-        protected void Page_Load(object sender, EventArgs e)
+
+        static ShowBooks()
         {
             using (var webClient = new WebClient())
             {
@@ -23,26 +22,20 @@ namespace LibraryV2
                 List<LibraryRanking> libraryList = JsonConvert.DeserializeObject<List<LibraryRanking>>(rawJSON);
                 // do some computation.
                 Console.WriteLine(libraryList.Count);
+
+                // take the objects parsed from JSON, and give them to my static collection.
+                AllLibraryRankings1 = libraryList;
             }
-
-            {
-                //Data source: https://openlibrary.org/dev/docs/api/covers
-                // get a String represenation of our JSON
-                //String rawJSON = webClient.DownloadString("our second data source");
-                // convert the JSON to a series of objects.
-                //BookCoverCollection bookcoverCollection = JsonConvert.DeserializeObject<BookCoverCollection>(rawData);
-                // do some computation.
-                // Console.WriteLine(bookcovercollection.bookcovers.Count);
-
-            }
-        
-             
-
         }
 
-        protected void BltdListDescr_Click(object sender, BulletedListEventArgs e)
+        private static List<LibraryRanking> allLibraryRankings1;
+
+        public static List<LibraryRanking> AllLibraryRankings1 { get => allLibraryRankings1; set => allLibraryRankings1 = value; }
+
+        public static List<LibraryRanking> GetLibraryRankings1()
         {
-
+            return AllLibraryRankings1;
         }
+
     }
 }
