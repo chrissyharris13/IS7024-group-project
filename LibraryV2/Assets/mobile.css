@@ -1,0 +1,37 @@
+body {
+    background-color: lightgrey;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: darkorchid;
+}
+
+h2 {
+    color: darkred;
+}
+
+h3 {
+    color: black;
+}
+
+#header {
+    position: fixed;
+    vertical-align: top;
+    height: 6em;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: black;
+}
+
+#content {
+    position: relative;
+    margin-top: 6em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#jsonlink {
+    border: 1px solid black;
+}

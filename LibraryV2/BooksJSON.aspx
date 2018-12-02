@@ -5,15 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/web.css" />
-    <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-device-width: 480px)" />
-    <link rel="stylesheet" href="assets/css/print.css" media="print" />
+    <link rel="stylesheet" href="assets/web.css" />
+    <link rel="stylesheet" href="assets/mobile.css" media="screen and (max-device-width: 480px)" />
+    <link rel="stylesheet" href="assets/print.css" media="print" />
 </head>
 <body>
 <form id="form1" runat="server">
    <div class="Library Rankings">
-    <h1> Search Our Inventory! </h1>
+    <h1> Search For Books </h1>
    </div>
 
         <p>

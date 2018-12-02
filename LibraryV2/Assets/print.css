@@ -1,0 +1,23 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+#content {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#jsonlink {
+    border: 1px solid black;
+}
