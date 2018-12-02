@@ -10,7 +10,7 @@
 namespace LibraryV2 {
     
     
-    public partial class SearchBooks {
+    public partial class BooksJSON {
         
         /// <summary>
         /// form1 control.
@@ -22,30 +22,21 @@ namespace LibraryV2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// BtnSearch control.
+        /// BooksJSONTxTBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSearch;
+        protected global::System.Web.UI.WebControls.TextBox BooksJSONTxTBox;
         
         /// <summary>
-        /// ListBox1 control.
+        /// BooksJsonBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
-        
-        /// <summary>
-        /// BookResource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource BookResource;
+        protected global::System.Web.UI.WebControls.Button BooksJsonBtn;
     }
 }
