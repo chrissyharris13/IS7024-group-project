@@ -26,13 +26,7 @@ namespace LibraryV2
             }
 
             {
-                //Data source: https://openlibrary.org/dev/docs/api/covers
-                // get a String represenation of our JSON
-                //String rawJSON = webClient.DownloadString("our second data source");
-                // convert the JSON to a series of objects.
-                //BookCoverCollection bookcoverCollection = JsonConvert.DeserializeObject<BookCoverCollection>(rawData);
-                // do some computation.
-                // Console.WriteLine(bookcovercollection.bookcovers.Count);
+             
 
             }
         
