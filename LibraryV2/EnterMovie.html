@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#title").autocomplete({
+                source: "AutoCompleteMovie.aspx",
+            });
+        });
+    </script>
+    <title>Search for Movie</title>
+</head>
+<body>
+    <h1>Search for Movie</h1>
+    <form method="get" action="">
+         Movie Name: <input id="title" type="text" name="title"/>
+         <input id="Submit1" type="submit" value="submit" />
+    </form>
+</body>
+</html>
