@@ -4,7 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>View Movies</title>
+    <link rel="stylesheet" href="assets/web.css" />
+    <link rel="stylesheet" href="assets/mobile.css" media="screen and (max-device-width: 480px)" />
+    <link rel="stylesheet" href="assets/print.css" media="print" />
 </head>
 <body>
     <h1>Number of Movies</h1>
