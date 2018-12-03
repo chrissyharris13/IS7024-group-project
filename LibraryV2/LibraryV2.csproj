@@ -67,6 +67,7 @@
     <Content Include="AutoCompleteMovie.aspx" />
     <Content Include="ConsumeMovies.aspx" />
     <Content Include="EnterMovie.html" />
+    <Content Include="MoviesWebService.asmx" />
     <Content Include="SearchBooks.aspx" />
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
@@ -90,6 +91,10 @@
     <Compile Include="LibraryRankingCollection.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="MovieCollection.cs" />
+    <Compile Include="MoviesWebService.asmx.cs">
+      <DependentUpon>MoviesWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SearchBooks.aspx.cs">
       <DependentUpon>SearchBooks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
