@@ -27,11 +27,18 @@ namespace LibraryV2
 
         private static string ShowJSON()
         {
+            using (var webClient = new WebClient())
+            {
+                //Data source: https://data.cityofchicago.org/Education/Libraries-Popular-Teen-Titles-at-the-Chicago-Publi/izv6-vdkm 
+                String rawJSON =
+                    webClient.DownloadString("https://data.cityofchicago.org/resource/6gjb-wqjd.json");
             List<LibraryRanking> allRankings = new List<LibraryRanking>();
            
             //convert to JSON
             string jsonLibraryRanking = JsonConvert.SerializeObject(allRankings);
             return jsonLibraryRanking;
+            }
+            //We need a foreach loop here in order to iterate over all the possible books.  
         }
     }
 }

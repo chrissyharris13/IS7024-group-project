@@ -21,5 +21,21 @@
             <asp:Button ID="BooksJsonBtn" runat="server" OnClick="Button1_Click" Text="Search" />
         </p>
     </form>
+    <table style="width:100%;">
+        <tr>
+            <td>Author</td>
+            <td>Title</td>
+            <td>Catalog Record</td>
+            <td>Publication Year</td>
+            <td>Ranking</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
 </body>
 </html>
