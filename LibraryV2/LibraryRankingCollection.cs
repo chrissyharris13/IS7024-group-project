@@ -9,17 +9,6 @@ namespace LibraryV2
     {
         private List<LibraryRanking> LibraryRankings;
 
-        public List<LibraryRanking> LibraryRankings1
-        {
-            get
-            {
-                return LibraryRankings;
-            }
-
-            set
-            {
-                LibraryRankings = value;
-            }
-        }
+        public List<LibraryRanking> LibraryRankings1 { get => LibraryRankings; set => LibraryRankings = value; }
     }
 }
