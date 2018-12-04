@@ -18,7 +18,10 @@
         </div>
         <asp:ListBox ID="ListBox1" runat="server" Width="225px" DataSourceID="BookResource" DataTextField="Title" DataValueField="Id"></asp:ListBox>
         <asp:ObjectDataSource ID="BookResource" runat="server" SelectMethod="GetLibraryRankings1" TypeName="LibraryV2.ShowBooks"></asp:ObjectDataSource>
-
+		<div>
+            <asp:Button ID="BtnReadJSON" runat="server" OnClick="BtnReadJSON_Click" Text="Count Books" Width="98px" />
+             <asp:Label ID="LblJSONCount" runat="server" Text="Book Count"></asp:Label>
+        </div>
     </form>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AutoCompleteMovie.aspx.cs" Inherits="LibraryV2.AutoCompleteEmoji" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AutoCompleteMovie.aspx.cs" Inherits="LibraryV2.AutoCompleteMovie" %>
 
 <!DOCTYPE html>
 

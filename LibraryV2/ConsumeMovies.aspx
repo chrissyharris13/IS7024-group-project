@@ -12,7 +12,10 @@
 <body>
     <h1>Number of Movies</h1>
     <form id="form1" runat="server">
-        <div>
+			<asp:Label ID="LblSearchInstruct" runat="server" Text="Search For A Movie:   "></asp:Label>
+            <asp:TextBox ID="TxtBxInput1" runat="server"></asp:TextBox>
+            <asp:Button ID="BtnSearch" runat="server" Text="Search" />
+		<div>
             <asp:ListBox ID="ListBox1" runat="server" Width="300px" DataSourceID="MovieDataSource" DataTextField="Title" DataValueField="Id"></asp:ListBox>
             <asp:ObjectDataSource ID="MovieDataSource" runat="server" SelectMethod="GetMovies1" TypeName="LibraryV2.ShowMovies"></asp:ObjectDataSource>
         </div>
